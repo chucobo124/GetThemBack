@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Class Sheets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Classhours</th>
+      <th>Venue</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @class_sheets.each do |class_sheet| %>
+      <tr>
+        <td><%= class_sheet.name %></td>
+        <td><%= class_sheet.classHours %></td>
+        <td><%= class_sheet.venue %></td>
+        <td><%= link_to 'Show', class_sheet %></td>
+        <td><%= link_to 'Edit', edit_class_sheet_path(class_sheet) %></td>
+        <td><%= link_to 'Destroy', class_sheet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Class sheet', new_class_sheet_path %>

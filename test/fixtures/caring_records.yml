@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  studentId: MyString
+  careMemberId: MyString
+  careDate: 2015-06-06 15:11:52
+  careMethod: 
+  description: MyText
+  reasonsForLeaving: 1
+  callback: MyText
+
+two:
+  studentId: MyString
+  careMemberId: MyString
+  careDate: 2015-06-06 15:11:52
+  careMethod: 
+  description: MyText
+  reasonsForLeaving: 1
+  callback: MyText

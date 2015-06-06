@@ -1,0 +1,85 @@
+<%= form_for(@person) do |f| %>
+  <% if @person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+      <ul>
+      <% @person.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :classId %><br>
+    <%= f.text_field :classId %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :sex %><br>
+    <%= f.number_field :sex %>
+  </div>
+  <div class="field">
+    <%= f.label :birthday %><br>
+    <%= f.datetime_select :birthday %>
+  </div>
+  <div class="field">
+    <%= f.label :leavingDate %><br>
+    <%= f.datetime_select :leavingDate %>
+  </div>
+  <div class="field">
+    <%= f.label :officePhone %><br>
+    <%= f.text_field :officePhone %>
+  </div>
+  <div class="field">
+    <%= f.label :homePhone %><br>
+    <%= f.text_field :homePhone %>
+  </div>
+  <div class="field">
+    <%= f.label :graduateSchool %><br>
+    <%= f.text_field :graduateSchool %>
+  </div>
+  <div class="field">
+    <%= f.label :company %><br>
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :jobTitle %><br>
+    <%= f.text_field :jobTitle %>
+  </div>
+  <div class="field">
+    <%= f.label :skill %><br>
+    <%= f.text_field :skill %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br>
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :permission %><br>
+    <%= f.number_field :permission %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.number_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

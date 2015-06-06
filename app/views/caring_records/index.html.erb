@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Caring Records</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Studentid</th>
+      <th>Carememberid</th>
+      <th>Caredate</th>
+      <th>Caremethod</th>
+      <th>Description</th>
+      <th>Reasonsforleaving</th>
+      <th>Callback</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @caring_records.each do |caring_record| %>
+      <tr>
+        <td><%= caring_record.studentId %></td>
+        <td><%= caring_record.careMemberId %></td>
+        <td><%= caring_record.careDate %></td>
+        <td><%= caring_record.careMethod %></td>
+        <td><%= caring_record.description %></td>
+        <td><%= caring_record.reasonsForLeaving %></td>
+        <td><%= caring_record.callback %></td>
+        <td><%= link_to 'Show', caring_record %></td>
+        <td><%= link_to 'Edit', edit_caring_record_path(caring_record) %></td>
+        <td><%= link_to 'Destroy', caring_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Caring record', new_caring_record_path %>

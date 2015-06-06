@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Studentid:</strong>
+  <%= @caring_record.studentId %>
+</p>
+
+<p>
+  <strong>Carememberid:</strong>
+  <%= @caring_record.careMemberId %>
+</p>
+
+<p>
+  <strong>Caredate:</strong>
+  <%= @caring_record.careDate %>
+</p>
+
+<p>
+  <strong>Caremethod:</strong>
+  <%= @caring_record.careMethod %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @caring_record.description %>
+</p>
+
+<p>
+  <strong>Reasonsforleaving:</strong>
+  <%= @caring_record.reasonsForLeaving %>
+</p>
+
+<p>
+  <strong>Callback:</strong>
+  <%= @caring_record.callback %>
+</p>
+
+<%= link_to 'Edit', edit_caring_record_path(@caring_record) %> |
+<%= link_to 'Back', caring_records_path %>

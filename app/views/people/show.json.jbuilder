@@ -1,0 +1,1 @@
+json.extract! @person, :id, :classId, :name, :sex, :birthday, :leavingDate, :officePhone, :homePhone, :grduateSchool, :company, :jobTitle, :skill, :email, :country, :area, :address, :permission, :status, :created_at, :updated_at

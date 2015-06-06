@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  classId: MyString
+  name: MyString
+  sex: 1
+  birthday: 2015-06-06 14:45:57
+  leavingDate: 2015-06-06 14:45:57
+  officePhone: MyString
+  homePhone: MyString
+  grduateSchool: MyString
+  company: MyString
+  jobTitle: MyString
+  skill: MyString
+  email: MyString
+  country: MyString
+  area: MyString
+  address: MyString
+  permission: 1
+  status: 1
+
+two:
+  classId: MyString
+  name: MyString
+  sex: 1
+  birthday: 2015-06-06 14:45:57
+  leavingDate: 2015-06-06 14:45:57
+  officePhone: MyString
+  homePhone: MyString
+  grduateSchool: MyString
+  company: MyString
+  jobTitle: MyString
+  skill: MyString
+  email: MyString
+  country: MyString
+  area: MyString
+  address: MyString
+  permission: 1
+  status: 1

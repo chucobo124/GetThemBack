@@ -1,0 +1,45 @@
+<%= form_for(@caring_record) do |f| %>
+  <% if @caring_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@caring_record.errors.count, "error") %> prohibited this caring_record from being saved:</h2>
+
+      <ul>
+      <% @caring_record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :studentId %><br>
+    <%= f.text_field :studentId %>
+  </div>
+  <div class="field">
+    <%= f.label :careMemberId %><br>
+    <%= f.text_field :careMemberId %>
+  </div>
+  <div class="field">
+    <%= f.label :careDate %><br>
+    <%= f.datetime_select :careDate %>
+  </div>
+  <div class="field">
+    <%= f.label :careMethod %><br>
+    <%= f.text_field :careMethod %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :reasonsForLeaving %><br>
+    <%= f.number_field :reasonsForLeaving %>
+  </div>
+  <div class="field">
+    <%= f.label :callback %><br>
+    <%= f.text_area :callback %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

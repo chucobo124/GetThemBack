@@ -1,0 +1,29 @@
+<%= form_for(@class_sheet) do |f| %>
+  <% if @class_sheet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@class_sheet.errors.count, "error") %> prohibited this class_sheet from being saved:</h2>
+
+      <ul>
+      <% @class_sheet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :classHours %><br>
+    <%= f.text_field :classHours %>
+  </div>
+  <div class="field">
+    <%= f.label :venue %><br>
+    <%= f.number_field :venue %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
