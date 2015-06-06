@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  permissionId: 1
+  groupId: 1
+  manergerId: 1
+  description: MyText
+  groupName: MyString
+
+two:
+  permissionId: 1
+  groupId: 1
+  manergerId: 1
+  description: MyText
+  groupName: MyString
